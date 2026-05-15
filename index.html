@@ -158,7 +158,7 @@
     cursor: pointer;
     transition: border-color 0.2s, background 0.2s;
     background: var(--bg);
-    aspect-ratio: 16/9;
+    aspect-ratio: 1573 / 544;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +181,7 @@
   .grid-wrap {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1573 / 544;
     overflow: hidden;
     border-radius: var(--radius);
     background: #111;
@@ -233,7 +233,7 @@
   .output-wrap {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1573 / 544;
     overflow: hidden;
     border-radius: var(--radius);
     background: #111;
@@ -363,10 +363,10 @@
 
       <!-- Output preview -->
       <div class="preview-pane">
-        <div class="pane-label">Rendered output — 1185 &times; 667</div>
+        <div class="pane-label">Rendered output — 1573 &times; 544</div>
         <div class="output-wrap">
           <img id="outputImg" src="" alt="Cropped output preview"/>
-          <div class="dim-badge">1185 &times; 667</div>
+          <div class="dim-badge">1573 &times; 544</div>
         </div>
       </div>
     </div>
@@ -381,7 +381,7 @@
         <div class="stat-val" id="yval">0.50</div>
       </div>
       <div class="stat">
-        <div class="stat-label">pixel (1185&times;667)</div>
+        <div class="stat-label">pixel (1573&times;544)</div>
         <div class="stat-val" id="pxval">593, 334</div>
       </div>
       <div class="stat">
@@ -399,7 +399,7 @@
 </footer>
 
 <script>
-  const DEFAULT_SRC = 'Grandmother and granddaughter-1887400939.jpg';
+  const DEFAULT_SRC = 'demo-image.jpg';
 
   function handleDrop(e) {
     e.preventDefault();
@@ -456,7 +456,7 @@
     document.getElementById('badge').textContent  = 'rxy: ' + rx + ', ' + ry;
     document.getElementById('xval').textContent   = rx.toFixed(2);
     document.getElementById('yval').textContent   = ry.toFixed(2);
-    document.getElementById('pxval').textContent  = Math.round(rx * 1185) + ', ' + Math.round(ry * 667);
+    document.getElementById('pxval').textContent  = Math.round(rx * 1573) + ', ' + Math.round(ry * 544);
   }
 </script>
 </body>
